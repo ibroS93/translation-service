@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nijaz Karahodzic – Übersetzungsdienst | Prevoditeljske usluge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-language logo-icon"></i>
+                    <h1 id="title">Übersetzungsdienst – Nijaz Karahodzic</h1>
+                </div>
+                
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#services" id="nav-services">Leistungen</a></li>
+                        <li><a href="#about" id="nav-about">Über mich</a></li>
+                        <li><a href="#process" id="nav-process">Ablauf</a></li>
+                        <li><a href="#testimonials" id="nav-testimonials">Referenzen</a></li>
+                        <li><a href="#contact" id="nav-contact">Kontakt</a></li>
+                        <li><a href="#location" id="nav-location">Location</a></li>
+                        <li><a href="#impressum" id="nav-impressum">Impressum</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="lang-toggle lang-dropdown">
+                    <button class="active"><span class="flag">🇩🇪</span> DE <i class="fas fa-chevron-down"></i></button>
+                    <div class="lang-dropdown-content">
+                        <button onclick="setLanguage('de')"><span class="flag">🇩🇪</span> DE</button>
+                        <button onclick="setLanguage('bs')"><span class="flag">🇧🇦</span> BIH</button>
+                        <button onclick="setLanguage('hr')"><span class="flag">🇭🇷</span> HR</button>
+                        <button onclick="setLanguage('sr')"><span class="flag">🇷🇸</span> SR</button>
+                        <button onclick="setLanguage('me')"><span class="flag">🇲🇪</span> ME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="hero-title">Professionelle Übersetzungen juristischer & medizinischer Dokumente</h2>
+            <p id="hero-text">Ermächtigter Übersetzer für bosnische, kroatische, serbische und montenegrinische Sprache in Frankfurt am Main. Präzise, vertraulich und termingerecht.</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn" id="hero-btn">Kontakt aufnehmen</a>
+                <a href="#services" class="btn btn-outline">Mehr erfahren</a>
+            </div>
+        </div>
+        <div class="floating-words">
+            <!-- WIRTSCHAFT / PRIVREDA / GOSPODARSTVO / ПРИВРЕДА -->
+            <div class="floating-word" data-lang="de" style="top: 8%; left: 5%;">WIRTSCHAFT</div>
+            <div class="floating-word" data-lang="bs" style="top: 12%; left: 85%;">PRIVREDA</div>
+            <div class="floating-word" data-lang="hr" style="top: 18%; left: 15%;">GOSPODARSTVO</div>
+            <div class="floating-word" data-lang="sr" style="top: 22%; left: 75%;">ПРИВРЕДА</div>
+        
+            <!-- ANERKENNUNG VON AUSLÄNDISCHEN DOKUMENTEN -->
+            <div class="floating-word" data-lang="de" style="top: 28%; left: 8%;">ANERKENNUNG VON AUSLÄNDISCHEN DOKUMENTEN</div>
+            <div class="floating-word" data-lang="bs" style="top: 32%; left: 82%;">PRIZNANJE STRANIH DOKUMENATA</div>
+            <div class="floating-word" data-lang="hr" style="top: 38%; left: 12%;">PRIZNANJE STRANIH DOKUMENATA</div>
+            <div class="floating-word" data-lang="sr" style="top: 42%; left: 78%;">ПРИЗНАЊЕ СТРАНИХ ДОКУМЕНАТА</div>
+        
+            <!-- GERÄTENSICHERHEIT UND NOTARIELLE DOKUMENTE -->
+            <div class="floating-word" data-lang="de" style="top: 48%; left: 5%;">GERÄTENSICHERHEIT</div>
+            <div class="floating-word" data-lang="de" style="top: 52%; left: 8%;">NOTARIELLE DOKUMENTE</div>
+            <div class="floating-word" data-lang="bs" style="top: 58%; left: 88%;">SIGURNOST UREDAJA</div>
+            <div class="floating-word" data-lang="bs" style="top: 62%; left: 85%;">NOTARSKI DOKUMENTI</div>
+            <div class="floating-word" data-lang="hr" style="top: 68%; left: 8%;">SIGURNOST UREĐAJA</div>
+            <div class="floating-word" data-lang="hr" style="top: 72%; left: 5%;">NOTARSKI DOKUMENTI</div>
+            <div class="floating-word" data-lang="sr" style="top: 78%; left: 82%;">СИГУРНОСТ УРЕЂАЈА</div>
+            <div class="floating-word" data-lang="sr" style="top: 82%; left: 85%;">НОТАРСКИ ДОКУМЕНТИ</div>
+        
+            <!-- ZEUGNISSE / SVJEDOČANSTVA / SVJEDODŽBE / СВЕДОЧАНСТВА -->
+            <div class="floating-word" data-lang="de" style="top: 15%; left: 88%;">ZEUGNISSE</div>
+            <div class="floating-word" data-lang="bs" style="top: 85%; left: 12%;">SVJEDOČANSTVA</div>
+            <div class="floating-word" data-lang="hr" style="top: 25%; left: 92%;">SVJEDODŽBE</div>
+            <div class="floating-word" data-lang="sr" style="top: 95%; left: 8%;">СВЕДОЧАНСТВА</div>
+        
+            <!-- BESCHEINIGUNGEN / POTVRDE / POTVRDE / ПОТВРДЕ -->
+            <div class="floating-word" data-lang="de" style="top: 35%; left: 92%;">BESCHEINIGUNGEN</div>
+            <div class="floating-word" data-lang="bs" style="top: 65%; left: 15%;">POTVRDE</div>
+            <div class="floating-word" data-lang="hr" style="top: 45%; left: 95%;">POTVRDE</div>
+            <div class="floating-word" data-lang="sr" style="top: 75%; left: 5%;">ПОТВРДЕ</div>
+        
+            <!-- DIPLOME / DIPLOME / DIPLOME / ДИПЛОМЕ -->
+            <div class="floating-word" data-lang="de" style="top: 55%; left: 95%;">DIPLOME</div>
+            <div class="floating-word" data-lang="bs" style="top: 15%; left: 25%;">DIPLOME</div>
+            <div class="floating-word" data-lang="hr" style="top: 85%; left: 25%;">DIPLOME</div>
+            <div class="floating-word" data-lang="sr" style="top: 5%; left: 65%;">ДИПЛОМЕ</div>
+        
+            <!-- DOLMETSCHEN / TUMACENJE / PREVOĐENJE / ТУМАЧЕЊЕ -->
+            <div class="floating-word" data-lang="de" style="top: 75%; left: 92%;">DOLMETSCHEN</div>
+            <div class="floating-word" data-lang="bs" style="top: 25%; left: 35%;">TUMACENJE</div>
+            <div class="floating-word" data-lang="hr" style="top: 35%; left: 35%;">PREVOĐENJE</div>
+            <div class="floating-word" data-lang="sr" style="top: 45%; left: 35%;">ТУМАЧЕЊЕ</div>
+        
+            <!-- SACHVERSTÄNDIGENGUTACHTEN / VIJEŠTAČENJA / VJEŠTAČENJA / ВЕШТАЧЕЊА -->
+            <div class="floating-word" data-lang="de" style="top: 85%; left: 88%;">SACHVERSTÄNDIGENGUTACHTEN</div>
+            <div class="floating-word" data-lang="bs" style="top: 5%; left: 45%;">VIJEŠTAČENJA</div>
+            <div class="floating-word" data-lang="hr" style="top: 15%; left: 45%;">VJEŠTAČENJA</div>
+            <div class="floating-word" data-lang="sr" style="top: 25%; left: 45%;">ВЕШТАЧЕЊА</div>
+        
+            <!-- FÜHRERSCHEIN / VOZAČKA DOZVOLA / VOZAČKA DOZVOLA / ВОЗАЧКА ДОЗВОЛА -->
+            <div class="floating-word" data-lang="de" style="top: 95%; left: 85%;">FÜHRERSCHEIN</div>
+            <div class="floating-word" data-lang="bs" style="top: 35%; left: 55%;">VOZAČKA DOZVOLA</div>
+            <div class="floating-word" data-lang="hr" style="top: 55%; left: 55%;">VOZAČKA DOZVOLA</div>
+            <div class="floating-word" data-lang="sr" style="top: 65%; left: 55%;">ВОЗАЧКА ДОЗВОЛА</div>
+        
+            <!-- HEIRATSURKUNDE / VJENČANI LIST / VJENČANI LIST / ВЈЕНЧАНИ ЛИСТ -->
+            <div class="floating-word" data-lang="de" style="top: 8%; left: 65%;">HEIRATSURKUNDE</div>
+            <div class="floating-word" data-lang="bs" style="top: 45%; left: 65%;">VJENČANI LIST</div>
+            <div class="floating-word" data-lang="hr" style="top: 65%; left: 65%;">VJENČANI LIST</div>
+            <div class="floating-word" data-lang="sr" style="top: 85%; left: 65%;">ВЈЕНЧАНИ ЛИСТ</div>
+        
+            <!-- AUSZUG AUS DEM GEBURTENREGISTER / IZVOD IZ MATIČNE KNJIGE ROĐENIH -->
+            <div class="floating-word" data-lang="de" style="top: 18%; left: 55%;">GEBURTENREGISTER</div>
+            <div class="floating-word" data-lang="bs" style="top: 55%; left: 75%;">IZVOD IZ MATIČNE KNJIGE ROĐENIH</div>
+            <div class="floating-word" data-lang="hr" style="top: 75%; left: 75%;">IZVOD IZ MATIČNE KNJIGE ROĐENIH</div>
+            <div class="floating-word" data-lang="sr" style="top: 15%; left: 25%;">ИЗВОД ИЗ МАТИЧНЕ КЊИГЕ РОЂЕНИХ</div>
+        
+            <!-- URTEILE / PRESUDE / PRESUDE / ПРЕСУДЕ -->
+            <div class="floating-word" data-lang="de" style="top: 28%; left: 45%;">URTEILE</div>
+            <div class="floating-word" data-lang="bs" style="top: 65%; left: 85%;">PRESUDE</div>
+            <div class="floating-word" data-lang="hr" style="top: 85%; left: 45%;">PRESUDE</div>
+            <div class="floating-word" data-lang="sr" style="top: 35%; left: 15%;">ПРЕСУДЕ</div>
+        
+            <!-- AUSZÜGE AUS DEM HEIRATSREGISTER / IZVODI IZ MATIČNE KNJIGE VJENČANIH -->
+            <div class="floating-word" data-lang="de" style="top: 38%; left: 35%;">HEIRATSREGISTER</div>
+            <div class="floating-word" data-lang="bs" style="top: 75%; left: 95%;">IZVODI IZ MATIČNE KNJIGE VJENČANIH</div>
+            <div class="floating-word" data-lang="hr" style="top: 95%; left: 35%;">IZVODI IZ MATIČNE KNJIGE VJENČANIH</div>
+            <div class="floating-word" data-lang="sr" style="top: 55%; left: 5%;">ИЗВОДИ ИЗ МАТИЧНЕ КЊИГЕ ВЈЕНЧАНИХ</div>
+        
+            <!-- AUSZÜGE AUS DEM GEBURTENREGISTER / IZVODI IZ MATIČNE KNJIGE ROĐENIH -->
+            <div class="floating-word" data-lang="de" style="top: 48%; left: 25%;">GEBURTENREGISTER</div>
+            <div class="floating-word" data-lang="bs" style="top: 85%; left: 55%;">IZVODI IZ MATIČNE KNJIGE ROĐENIH</div>
+            <div class="floating-word" data-lang="hr" style="top: 5%; left: 75%;">IZVODI IZ MATIČNE KNJIGE ROĐENIH</div>
+            <div class="floating-word" data-lang="sr" style="top: 65%; left: 25%;">ИЗВОДИ ИЗ МАТИЧНЕ КЊИГЕ РОЂЕНИХ</div>
+        
+            <!-- RECHTSWESEN / PRAVNI POSLOVI / PRAVNI POSLOVI / ПРАВНИ ПОСЛОВИ -->
+            <div class="floating-word" data-lang="de" style="top: 58%; left: 15%;">RECHTSWESEN</div>
+            <div class="floating-word" data-lang="bs" style="top: 95%; left: 75%;">PRAVNI POSLOVI</div>
+            <div class="floating-word" data-lang="hr" style="top: 15%; left: 85%;">PRAVNI POSLOVI</div>
+            <div class="floating-word" data-lang="sr" style="top: 75%; left: 45%;">ПРАВНИ ПОСЛОВИ</div>
+        
+            <!-- MEDIZIN / MEDICINA / MEDICINA / МЕДИЦИНА -->
+            <div class="floating-word" data-lang="de" style="top: 68%; left: 75%;">MEDIZIN</div>
+            <div class="floating-word" data-lang="bs" style="top: 8%; left: 95%;">MEDICINA</div>
+            <div class="floating-word" data-lang="hr" style="top: 28%; left: 65%;">MEDICINA</div>
+            <div class="floating-word" data-lang="sr" style="top: 48%; left: 85%;">МЕДИЦИНА</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="services-title">Meine Schwerpunkte</h2>
+                <p id="services-subtitle">Umfassende Übersetzungsdienstleistungen für verschiedene Fachbereiche</p>
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-gavel card-icon"></i>
+                    <h3 id="service1-title">Rechtliche Dokumente</h3>
+                    <p id="service1-text">Präzise Übersetzungen von Verträgen, Urkunden, Gerichtsdokumenten und anderen rechtlichen Texten mit besonderer Sorgfalt für juristische Terminologie.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-file-medical card-icon"></i>
+                    <h3 id="service2-title">Medizinische Fachübersetzungen</h3>
+                    <p id="service2-text">Fachkundige Übersetzung medizinischer Berichte, Gutachten, Studien und Patienteninformationen unter Berücksichtigung der medizinischen Fachsprache.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-industry card-icon"></i>
+                    <h3 id="service3-title">Wirtschaft & Industrie</h3>
+                    <p id="service3-text">Übersetzungen für Geschäftsberichte, technische Dokumentationen, Marketingmaterialien und branchenspezifische Kommunikation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 id="about-title">Über mich</h2>
+                    <p id="about-text-1">
+                        Als beeidigter Übersetzer mit langjähriger Erfahrung biete ich präzise und vertrauliche Übersetzungen an, spezialisiert auf juristische, wirtschaftliche und medizinische Fachtexte. Meine Expertise umfasst die Sprachen Bosnisch, Kroatisch, Serbisch und Montenegrinisch.
+                    </p>
+                    <p id="about-text-2">
+                        Mit einem Hintergrund in Rechtswissenschaften und umfassender Erfahrung im medizinischen Bereich garantiere ich nicht nur sprachliche Genauigkeit, sondern auch fachliche Korrektheit Ihrer Dokumente.
+                    </p>
+                    <p id="about-text-3">
+                        Sitz: Schneckenhofstr. 35, 60596 Frankfurt am Main.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" id="stat1-number">15+</span>
+                            <span class="stat-text" id="stat1-text">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="stat2-number">5000+</span>
+                            <span class="stat-text" id="stat2-text">Projekte abgeschlossen</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="stat3-number">100%</span>
+                            <span class="stat-text" id="stat3-text">Kundenzufriedenheit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="process-title">Mein Arbeitsablauf</h2>
+                <p id="process-subtitle">So stelle ich sicher, dass Ihre Übersetzungen termingerecht und in höchster Qualität geliefert werden</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 id="step1-title">Anfrage & Analyse</h3>
+                        <p id="step1-text">Wir besprechen Ihr Projekt, den Umfang und den gewünschten Liefertermin.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 id="step2-title">Übersetzung</h3>
+                        <p id="step2-text">Fachgerechte Übersetzung durch mich als zertifizierten Übersetzer.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 id="step3-title">Qualitätskontrolle</h3>
+                        <p id="step3-text">Gründliches Korrekturlesen und Prüfung auf Terminologie und Konsistenz.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 id="step4-title">Lieferung</h3>
+                        <p id="step4-text">Pünktliche Lieferung des fertigen Dokuments in Ihrem gewünschten Format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="testimonials-title">Kundenstimmen</h2>
+                <p id="testimonials-subtitle">Das sagen meine Kunden über meine Arbeit</p>
+            </div>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p class="testimonial-text" id="testimonial1-text">Herr Karahodzic hat mehrere medizinische Gutachten für uns übersetzt. Die Terminologie war perfekt, und die Lieferung erfolgte schneller als vereinbart. Sehr empfehlenswert!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h4 id="testimonial1-author">Dr. Michael Klein</h4>
+                            <p id="testimonial1-company">Medizinisches Gutachterbüro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text" id="testimonial2-text">Die Übersetzung unserer Verträge war präzise und fachlich einwandfrei. Herr Karahodzic versteht die juristischen Nuancen und liefert hervorragende Qualität.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <h4 id="testimonial2-author">Sabine Jäger</h4>
+                            <p id="testimonial2-company">Rechtsanwaltskanzlei</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text" id="testimonial3-text">Schnelle, zuverlässige und professionelle Übersetzung unserer Geschäftsunterlagen. Die Kommunikation war ausgezeichnet, und das Ergebnis hat unsere Erwartungen übertroffen.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TH</div>
+                        <div class="author-info">
+                            <h4 id="testimonial3-author">Thomas Huber</h4>
+                            <p id="testimonial3-company">Exportunternehmen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="contact-title">Kontaktieren Sie mich</h2>
+                <p id="contact-subtitle">Gerne stehe ich Ihnen für Ihre Übersetzungsprojekte zur Verfügung</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 id="contact-phone-title">Telefon</h3>
+                            <p>+49 179 9464856</p>
+                            <p id="contact-phone-subtitle">(WhatsApp & Viber)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 id="contact-email-title">E-Mail</h3>
+                            <p><a href="mailto:nijazkarahodzic@outlook.de">nijazkarahodzic@outlook.de</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 id="contact-address-title">Adresse</h3>
+                            <p>Schneckenhofstr. 35</p>
+                            <p>60596 Frankfurt am Main</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-note">
+                    <p id="contact-note-text">Kontaktieren Sie mich gerne per Telefon oder E-Mail für ein unverbindliches Angebot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="location-title">Meine Location</h2>
+                <p id="location-subtitle">Finden Sie mich in Frankfurt am Main</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.240333336804!2d8.674103476381958!3d50.10050837152747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0c04ba24ffa9%3A0xb2aa4d61e50fb8a!2sSchneckenhofstra%C3%9Fe%2035%2C%2060596%20Frankfurt%20am%20Main%2C%20Deutschland!5e0!3m2!1sde!2sat!4v1763820915740!5m2!1sde!2sat" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 10px; box-shadow: var(--shadow);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <div class="reviews-container">
+                    <div class="reviews-header">
+                        <h3 id="reviews-title">Kundenbewertungen bei Google</h3>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-text">5.0/5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-actions">
+                        <!-- Popravljen Google Reviews link -->
+                        <a href="https://www.google.com/search?q=Nijaz+Karahodzic+Übersetzer+Frankfurt&ludocid=1234567890#lrd=0x47bd0c04ba24ffa9:0xb2aa4d61e50fb8a,1" 
+                           target="_blank" 
+                           class="btn btn-google">
+                            <i class="fab fa-google"></i>
+                            <span id="view-reviews-text">Bewertungen ansehen</span>
+                        </a>
+                        
+                        <!-- Dugme sa vidljivim tekstom -->
+                        <a href="https://search.google.com/local/writereview?placeid=ChIJxxxxxxxxxxxxx" 
+                           target="_blank" 
+                           class="btn btn-review">
+                            <i class="fas fa-pen"></i>
+                            <span id="write-review-text">Bewertung schreiben</span>
+                        </a>
+                    </div>
+                    
+                    <div class="location-info">
+                        <h4 id="opening-hours-title">Öffnungszeiten</h4>
+                        <p id="hours-week-text">Montag - Freitag: 9:00 - 18:00 Uhr</p>
+                        <p id="hours-sat-text">Samstag: Nach Vereinbarung</p>
+                        <p id="hours-sun-text">Sonntag: Geschlossen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impressum Section -->
+    <section id="impressum" class="section impressum">
+        <div class="container">
+            <div class="impressum-content">
+                <h2 id="impressum-title">Impressum & Datenschutz</h2>
+                
+                <h3 id="impressum-legal-title">Angaben gemäß § 5 TMG</h3>
+                <p id="impressum-legal-text">
+                    Ref. iur. Nijaz Karahodzic<br>
+                    Staatlich geprüfter & ermächtigter Übersetzer<br>
+                    Schneckenhofstr. 35<br>
+                    60596 Frankfurt am Main<br>
+                    Deutschland
+                </p>
+                
+                <p id="impressum-contact">
+                    Mobil: +49 179 9464856<br>
+                    E-Mail: <a href="mailto:nijazkarahodzic@outlook.de">nijazkarahodzic@outlook.de</a>
+                </p>
+                
+                <h3 id="impressum-disclaimer-title">Haftungsausschluss (Disclaimer)</h3>
+                <p id="impressum-disclaimer-text">Trotz sorgfältiger Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+                
+                <h3 id="impressum-privacy-title">Datenschutzerklärung (DSGVO)</h3>
+                <p id="impressum-privacy-text">Es werden ausschließlich personenbezogene Daten erhoben, die zur Bearbeitung Ihrer Anfrage erforderlich sind. Diese Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+                
+                <p id="impressum-privacy-responsible">
+                    Verantwortlich für den Datenschutz:<br>
+                    Der Hessische Beauftragte für Datenschutz und Informationsfreiheit<br>
+                    Gustav-Stresemann-Ring 1, 65189 Wiesbaden<br>
+                    <a href="https://datenschutz.hessen.de">datenschutz.hessen.de</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 id="footer-services-title">Übersetzungsdienst</h3>
+                    <p id="footer-services-text">Professionelle Übersetzungen juristischer und medicinischer Dokumente in bosnischer, kroatischer, serbischer und montenegrinischer Sprache.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-xing"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 id="footer-links-title">Leistungen</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services" id="footer-link1">Rechtliche Dokumente</a></li>
+                        <li><a href="#services" id="footer-link2">Medizinische Übersetzungen</a></li>
+                        <li><a href="#services" id="footer-link3">Wirtschaft & Industrie</a></li>
+                        <li><a href="#services" id="footer-link4">Zertifizierte Übersetzungen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 id="footer-contact-title">Kontakt</h3>
+                    <p id="footer-address">Schneckenhofstr. 35, 60596 Frankfurt am Main</p>
+                    <p id="footer-phone">+49 179 9464856</p>
+                    <p id="footer-email">nijazkarahodzic@outlook.de</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p id="footer-text">© 2025 Nijaz Karahodzic – Ermächtigter Übersetzer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
